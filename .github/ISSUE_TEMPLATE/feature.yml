@@ -14,7 +14,7 @@ body:
       required: true
   - type: textarea
     attributes:
-      label: 経緯（必須）
+      label: 経緯（空欄で作成可能 / 編集で入力必須）
       description: 追加/修正の経緯を記載してください。
       placeholder: |
         契機となった情報源（他Issue、SlackスレッドのURLなど）
@@ -27,7 +27,7 @@ body:
         - [reservia-wiki | 店舗更新](https://reservia-wiki.dev-reservia.jp/xxxxxxxxxxxxxxxxxxxxxxxx)
   - type: input
     attributes:
-      label: エンドポイント（必須）
+      label: エンドポイント（空欄で作成可能 / 編集で入力必須）
       description: 修正したいエンドポイントを記載してください
       placeholder: 例：PATCH /v3/shops/{id}
   - type: textarea
@@ -41,7 +41,7 @@ body:
       value: 変更無し
   - type: textarea
     attributes:
-      label: 想定レスポンス（必須）
+      label: 想定レスポンス（空欄で作成可能 / 編集で入力必須）
       placeholder: |
         例：
         {
