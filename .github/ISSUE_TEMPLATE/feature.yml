@@ -8,4 +8,5 @@ body:
     attributes:
       label: hoge
       options:
-        - label: hoge
+        - label: foo
+        - label: bar
