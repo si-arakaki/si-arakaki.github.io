@@ -6,5 +6,6 @@ body:
       value: "## Thank you for contributing to our project!"
   - type: checkboxes
     attributes:
+      label: hoge
       options:
         - label: hoge
