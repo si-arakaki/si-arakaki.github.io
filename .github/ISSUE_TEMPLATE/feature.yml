@@ -3,4 +3,4 @@ description: feature
 body:
   - type: textarea
     attributes:
-      label: label: リクエスト（必須）※最終的に決まった内容をこちらに記載してください。
+      label: リクエスト（必須）※最終的に決まった内容をこちらに記載してください。
