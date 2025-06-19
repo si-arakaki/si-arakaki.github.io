@@ -1,12 +1,71 @@
-name: feature
-description: feature
+name: 🎸 エンドポイント追加/修正
+description: エンドポイント追加/修正
+labels:
+  - enhancement
 body:
-  - type: markdown
+  - type: textarea
     attributes:
-      value: "## Thank you for contributing to our project!"
+      label: 概要（必須）
+      description: 追加/修正の概要を記載してください。
+      placeholder: |
+        例：
+        店舗登録情報更新用のエンドポイントのedgeにlinksを追加してほしい
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 経緯（必須）
+      description: 追加/修正の経緯を記載してください。
+      placeholder: |
+        契機となった情報源（他Issue、SlackスレッドのURLなど）
+
+        例：
+        - #123
+        > 店舗登録情報更新用のエンドポイントのedgeにlinksを追加してほしい
+
+        例：
+        - [reservia-wiki | 店舗更新](https://reservia-wiki.dev-reservia.jp/xxxxxxxxxxxxxxxxxxxxxxxx)
+  - type: input
+    attributes:
+      label: エンドポイント（必須）
+      description: 修正したいエンドポイントを記載してください
+      placeholder: 例：PATCH /v3/shops/{id}
+  - type: textarea
+    attributes:
+      label: 想定リクエスト（必須）
+      placeholder: |
+        例：
+        {
+          "name": "谷町美容研究所本店" // 10文字以下とする
+        }
+      value: 変更無し
+  - type: textarea
+    attributes:
+      label: 想定レスポンス（必須）
+      placeholder: |
+        例：
+        {
+          "shop": {
+            "id": 1,
+            // ...,
+            "edges": {
+              // ...,
+              "links": ..., // 追加
+            }
+          }
+        }
+      value: 変更無し
+  - type: textarea
+    attributes:
+      label: 備考（任意）
+      description: その他備考はこちらへ記載して下さい。
   - type: checkboxes
     attributes:
-      label: hoge
+      label: チェックリスト
       options:
-        - label: foo
-        - label: bar
+        - label: 本Issue対応の経緯を記載していること
+        - label: 追加/修正の対象となるエンドポイント（例：PATCH /v3/shops/{id}）を記載していること
+        - label: 上記エンドポイントに対するリクエストの追加/修正内容を記載していること
+        - label: 上記エンドポイントに対するレスポンスの追加/修正内容を記載していること
+        - label: IssueのステータスをReadyにする場合、Issue内の議論での決定事項が全て概要欄に反映されていること
+        - label: IssueのステータスをPendingにする場合、Pendingとする理由（なぜ着手を保留とするか、いつ着手可能とするか）を記載していること
