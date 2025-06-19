@@ -1,6 +1,10 @@
 name: feature
 description: feature
 body:
-  - type: textarea
+  - type: markdown
     attributes:
-      label: リクエスト（必須）※最終的に決まった内容をこちらに記載してください。
+      value: "## Thank you for contributing to our project!"
+  - type: checkboxes
+    attributes:
+      options:
+        - label: hoge
