@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+N:新垣;克真;;;
+FN:克真 新垣
+X-PHONETIC-FIRST-NAME:カズマ
+X-PHONETIC-LAST-NAME:アラカキ
+ORG:株式会社システムインテグレート;
+EMAIL;type=WORK:arakaki@system-integrate.com
+TEL;type=VOICE:080 6493 2982
+ADR;type=WORK:;;東天満2-9-3\nAXIS南森町ビル別館II 7階;大阪市北区;大阪府;5300044;日本
+URL:https://system-integrate.com
+BDAY:1988-11-11
+END:VCARD
